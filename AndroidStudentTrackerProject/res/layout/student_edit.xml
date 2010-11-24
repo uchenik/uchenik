@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<ScrollView android:id="@+id/scrllvwNo1"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<EditText android:id="@+id/name" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/name"
+				android:singleLine="true"
+				android:padding="10px"
+				android:capitalize="words"/>
+			<EditText android:id="@+id/notes"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lines="5"
+				android:hint="@string/notes"
+				android:padding="10px"
+				android:capitalize="sentences"/>
+			<EditText android:id="@+id/bookname" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/bookname"
+				android:singleLine="true" 
+				android:padding="10px"
+				android:capitalize="words"/>
+			<EditText android:id="@+id/pagenbr" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/pagenbr"
+				android:singleLine="true"
+				android:padding="10px"/>
+			<EditText android:id="@+id/paragraphnbr" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/paragraphnbr"
+				android:singleLine="true"
+				android:padding="10px"/>
+			<Button android:id="@+id/confirm" 
+				android:text="@string/confirm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
