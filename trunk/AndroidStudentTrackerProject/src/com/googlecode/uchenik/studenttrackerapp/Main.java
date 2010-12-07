@@ -12,8 +12,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
 
@@ -70,6 +72,9 @@ public class Main extends ListActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
+		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
+		CharSequence title = ((TextView) info.targetView.findViewById(R.id.text1)).getText();
+		menu.setHeaderTitle(title);
 		final MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.contextmenu, menu);
 	}
