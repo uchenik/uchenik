@@ -4,6 +4,7 @@
     <b>Menu</b></font> and touch:\n\n<li><font fgcolor="#ffffffff">
     <b>Add Student</b></font> to create a new student from scratch\n</li>"</string>
     <string name="app_name">Student Tracker</string>
+    <color name="my_backgroundcolor">#003146</color>
     <string name="add_student">Add Student</string>
     <string name="import_student">Import Student</string>
     <string name="edit_student">Edit Student</string>
